@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool IsSafe(int **arr, int x, int y, int n)
+bool Is_Safe(int **arr, int x, int y, int n)
 {
     for (int row = 0; row < x; row++)
     {
@@ -46,7 +46,7 @@ bool nQueen(int **arr, int x, int n)
 
     for (int col = 0; col < n; col++)
     {
-        if (IsSafe(arr, x, col, n))
+        if (Is_Safe(arr, x, col, n))
         {
             arr[x][col] = 1;
 
