@@ -1,5 +1,9 @@
 #include <iostream>
-int binarySearch(int array[], int n, int key)
+
+using namespace std
+
+    int
+    binarySearch(int array[], int n, int key)
 {
     int s = 0;
     int l = n - 1;
@@ -25,7 +29,7 @@ int binarySearch(int array[], int n, int key)
 int main()
 {
     int n;
-    std::cin >> n;
+    cin >> n;
 
     int array[n];
     for (int i = 0; i < n; i++)
@@ -34,6 +38,7 @@ int main()
     }
 
     int key;
-    std::cin >> key;
-    std::cout << binarySearch(array, n, key);
+    cin >> key;
+    cout << binarySearch(array, n, key);
+    cout << "key if done"
 }
